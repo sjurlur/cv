@@ -10,6 +10,7 @@ injectGlobal`
 `;
 
 const LayoutContainer = styled.div`
+  margin: 2rem 1rem;
   display: grid;
   grid-template-columns: 150px 500px;
   grid-column-gap: 50px;
