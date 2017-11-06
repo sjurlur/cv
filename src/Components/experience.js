@@ -18,16 +18,16 @@ export default props => {
   return (
     <Experience>
       <Section>
+        <HeaderTag>Prosjekter</HeaderTag>
+        <List>{projects}</List>
+      </Section>
+      <Section>
         <HeaderTag>Praksis</HeaderTag>
         <List>{work}</List>
       </Section>
       <Section>
         <HeaderTag>Utdannelse</HeaderTag>
         <List>{education}</List>
-      </Section>
-      <Section>
-        <HeaderTag>Prosjekter</HeaderTag>
-        <List>{projects}</List>
       </Section>
     </Experience>
   );
