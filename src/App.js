@@ -1,20 +1,34 @@
 import React, { Component } from 'react';
-import { injectGlobal } from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
 import * as cv from './cv.json';
 import Header from './Components/header';
-import WorkExperience from './Components/work-experience';
+import Experience from './Components/experience';
+import sjur from './Components/sjur.jpg';
 
 injectGlobal`
 * {font-family: 'Lato', sans-serif;}
 `;
 
+const LayoutContainer = styled.div`
+  display: grid;
+  grid-template-columns: 150px 500px;
+  grid-column-gap: 50px;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 1;
+`;
+
 class App extends Component {
   render() {
     return (
-      <div>
+      <LayoutContainer>
+        <Image src={sjur} alt="Sjur Seibt" />
         <Header cv={cv} />
-        <WorkExperience data={cv.workExperience} />
-      </div>
+        <Experience data={cv} />
+      </LayoutContainer>
     );
   }
 }
