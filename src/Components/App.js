@@ -15,17 +15,11 @@ const LayoutContainer = styled.div`
   padding: 10rem;
 `;
 
-
 class App extends Component {
   render() {
     const cubes = cv.cubes.map((data, index) => <Cube faces={data.faces} number={index} />);
-    
-    return (
-      <LayoutContainer>
-        {cubes}
 
-      </LayoutContainer>
-    );
+    return <LayoutContainer>{cubes}</LayoutContainer>;
   }
 }
 

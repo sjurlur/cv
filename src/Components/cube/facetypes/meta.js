@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const DefinitionList = styled.dl``;
-const DefinitionTerm = styled.dt`font-weight: 700;`;
+const DefinitionTerm = styled.dt`
+  font-weight: 700;
+`;
 const DefinitionItem = styled.dd``;
 
 export default props => {
