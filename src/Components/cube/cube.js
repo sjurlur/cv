@@ -4,10 +4,7 @@ import Face from './face';
 import HeaderComp from './facetypes/header';
 import TextComp from './facetypes/text';
 import ImageComp from './facetypes/image';
-
-const Cube = styled.button`
-  transform-style: preserve-3d;
-  transform: ${props => getTransform(props.number)};
+const Button = styled.button`
   padding: 0;
   border: 0;
   text-align: initial;
@@ -26,6 +23,25 @@ const Cube = styled.button`
   text-transform: initial;
   text-indent: initial;
   text-shadow: initial;
+  &:hover {
+    animation: push 0.3s;
+    transform-style: preserve-3d;
+  }
+
+  @keyframes push {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(0.5em);
+    }
+  }
+`;
+
+const Cube = styled.div`
+  transform-style: preserve-3d;
+  transform: ${props => getTransform(props.number, -45, 45)};
+  }
 `;
 
 function getRowNumber(num, maxRowWidth) {
@@ -42,8 +58,8 @@ function getRowNumber(num, maxRowWidth) {
   return rowNumber - 1;
 }
 
-function getTransform(number) {
-  const baseRotation = 'rotateX(-45deg) rotateY(45deg)';
+function getTransform(number, rotateX, rotateY) {
+  const baseRotation = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   const offset = 2;
   if (number === 0) {
     return baseRotation;
@@ -89,5 +105,9 @@ export default props => {
     return <Face face={face}>{Comp ? <Comp data={props.faces[index].data} /> : null}</Face>;
   });
 
-  return <Cube number={props.number}>{cubeFaces}</Cube>;
+  return (
+    <Button>
+      <Cube number={props.number}>{cubeFaces}</Cube>
+    </Button>
+  );
 };
