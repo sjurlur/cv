@@ -6,6 +6,7 @@ const ListItem = styled.li`margin-bottom: 1.5rem;`;
 export default props => {
   return (
     <ListItem>
+      {props.data.img ? <img src={require(`./${props.data.img}`)} /> : null}
       <HeaderTag>
         {props.data.header} ({props.data.date})
       </HeaderTag>

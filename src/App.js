@@ -12,14 +12,24 @@ injectGlobal`
 const LayoutContainer = styled.div`
   margin: 2rem 1rem;
   display: grid;
-  grid-template-columns: 150px 500px;
-  grid-column-gap: 50px;
+  max-width: 750px;
+  grid-template-columns: auto;
+
+  @media screen and (min-width: 600px) {
+    grid-template-columns: 150px auto;
+    grid-column-gap: 50px;
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 1;
+  display: none;
+
+  @media screen and (min-width: 600px) {
+    display: block;
+  }
 `;
 
 class App extends Component {

@@ -31,10 +31,11 @@
     { "header": "Universitet i Bergen", "date": "2009-2012", "description": "Bachelorgrad i nye medier" }
   ],
   "projects": [
-    { "header": "Teknosykkelen", "date": "2017", "description": "" },
+    { "header": "Teknosykkelen", "date": "2017", "description": "", "img": "teknosykkelen.jpg" },
     {
       "header": "Monoplant",
       "date": "2014",
+      "img": "monoplant.png",
       "description":
         "Som masterprosjekt har jeg i samarbeid med Morten Kjelling, Jo Herstad og Intermedia (institutt for pedagogikk) utviklet ett læringssystem for fotosyntese til bruk i videregåaende skole. Systemet tar bilde av en plante hvert minutt og laster dette opp til ett API sammen med sensordata ang. faktorer som er viktig for fotosyntese (lysmengde, luftfuktighet, temperatur og jordfuktighet). Hvert døgn blir det automatisk satt sammen en timelapsevideo av alle bildene som ble tatt den dagen. Videoene blir spilt av i rask film slik at ett døgn vises på rundt 30 sekund. Sensordata vises i grafer. Planten er nå plassert i en biologiklasse (BI2) på Foss VGS, der de nå har om fotosyntese. Målet er å visualisere hvordan endringer i plantens fysiske miljø fører til endringer i fotosyntesen. Dermed håper vi å bidra til forståelsen av fotosyntese som jo er ett abstrakt fenomen."
     }

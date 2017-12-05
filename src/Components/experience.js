@@ -12,15 +12,11 @@ const List = styled.ul`
 const HeaderTag = styled.h2`font-size: 2rem;`;
 
 export default props => {
-  const work = props.data.workExperience.map(el => <WorkItem data={el} />);
-  const education = props.data.education.map(el => <WorkItem data={el} />);
-  const projects = props.data.projects.map(el => <WorkItem data={el} />);
+  const work = props.data.workExperience.map((el, index) => <WorkItem key={`${el.header}-${index}`} data={el} />);
+  const education = props.data.education.map((el, index) => <WorkItem key={`${el.header}-${index}`} data={el} />);
+  const projects = props.data.projects.map((el, index) => <WorkItem key={`${el.header}-${index}`} data={el} />);
   return (
     <Experience>
-      <Section>
-        <HeaderTag>Prosjekter</HeaderTag>
-        <List>{projects}</List>
-      </Section>
       <Section>
         <HeaderTag>Praksis</HeaderTag>
         <List>{work}</List>
@@ -28,6 +24,10 @@ export default props => {
       <Section>
         <HeaderTag>Utdannelse</HeaderTag>
         <List>{education}</List>
+      </Section>
+      <Section>
+        <HeaderTag>Prosjekter</HeaderTag>
+        <List>{projects}</List>
       </Section>
     </Experience>
   );
