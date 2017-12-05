@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Face from './face';
-import HeaderComp from './headercube';
-import TextComp from './text';
-import ImageComp from './image';
+import HeaderComp from './facetypes/header';
+import TextComp from './facetypes/text';
+import ImageComp from './facetypes/image';
 
 const Cube = styled.button `
 transform-style: preserve-3d;

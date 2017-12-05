@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled, { injectGlobal } from 'styled-components';
-import * as cv from './cv.json';
-import Cube from './Components/cube';
+import * as cv from '../data/cv.json';
+import Cube from './cube/cube';
 
 injectGlobal`
 * {font-family: 'Lato', sans-serif;}
