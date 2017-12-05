@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Side from './side';
+import Face from './face';
 import HeaderComp from './headercube';
 import TextComp from './text';
 import ImageComp from './image';
@@ -84,7 +84,7 @@ export default props => {
         if (props.faces && props.faces[index]) {
             Comp = getComponentForType(props.faces[index].type);
         }
-        return (<Side face={face}>{Comp ? <Comp data={props.faces[index].data}/> : null}</Side>)
+        return (<Face face={face}>{Comp ? <Comp data={props.faces[index].data}/> : null}</Face>)
     });
     
     return (
