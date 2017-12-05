@@ -25,14 +25,14 @@
       "faces": [
         {"type": "header", "data": "Monoplant"},
         {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
-        {"type": "text", "data": "sjur.jpg"}        
+        {"type": "image", "data": "monoplant.png"}        
       ]
     },
     {
       "faces": [
         {"type": "header", "data": "Lydsykkelen"},
         {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
-        {"type": "text", "data": "sjur.jpg"}        
+        {"type": "image", "data": "teknosykkelen.jpg"}        
       ]
     },
     {
