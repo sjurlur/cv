@@ -8,12 +8,7 @@ injectGlobal`
 body {background: papayawhip}
 `;
 
-const LayoutContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
-  padding: 10rem;
-`;
+const LayoutContainer = styled.div``;
 
 class App extends Component {
   render() {

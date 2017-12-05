@@ -1,0 +1,3 @@
+*animasjon på hover på gjøre seg ferdig
+*focus stil
+*button as button

@@ -4,28 +4,21 @@ import Face from './face';
 import HeaderComp from './facetypes/header';
 import TextComp from './facetypes/text';
 import ImageComp from './facetypes/image';
-const Button = styled.button`
-  padding: 0;
-  border: 0;
-  text-align: initial;
-  line-height: normal;
-  overflow: visible;
-  padding: 0;
-  border-radius: 0;
-  font: initial;
+const Button = styled.div`
   font-size: 5em;
-  display: block;
   cursor: pointer;
-  text-rendering: initial;
-  color: initial;
-  letter-spacing: initial;
-  word-spacing: initial;
-  text-transform: initial;
-  text-indent: initial;
-  text-shadow: initial;
+
+  &:focus {
+    outline: none;
+  }
+
   &:hover {
     animation: push 0.3s;
     transform-style: preserve-3d;
+
+    div div:first-child {
+      background-color: papayawhip;
+    }
   }
 
   @keyframes push {
@@ -41,6 +34,8 @@ const Button = styled.button`
 const Cube = styled.div`
   transform-style: preserve-3d;
   transform: ${props => getTransform(props.number, -45, 45)};
+  margin: 1.5em auto;
+  width: 2em;
   }
 `;
 
@@ -107,7 +102,9 @@ export default props => {
 
   return (
     <Button>
-      <Cube number={props.number}>{cubeFaces}</Cube>
+      <Cube number={props.number} onClick={() => {}}>
+        {cubeFaces}
+      </Cube>
     </Button>
   );
 };

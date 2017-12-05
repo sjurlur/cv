@@ -2,48 +2,53 @@
   "cubes": [
     {
       "faces": [
-        {"type": "header", "data": "Sjur Seibt"},
-        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
-        {"type": "image", "data": "sjur.jpg"}        
+        { "type": "header", "data": "Sjur Seibt" },
+        {
+          "type": "text",
+          "data":
+            "<dl><dt>Født</dt><dd>1987</dd><dt>Adresse</dt><dd>Johan selmers gate 8</dd><dt>Epost</dt><dd><a href='mailto:sjurlur@gmail.com'>sjurlur@gmail.com</a></dd><dt>Telefon</dt><dd><a href='tel:004799229275'>99229275</a></dd></dl>"
+        },
+        { "type": "image", "data": "sjur.jpg" }
       ]
     },
     {
       "faces": [
-        {"type": "header", "data": "Skole"},
-        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
-        {"type": "text", "data": "sjur.jpg"}        
+        { "type": "header", "data": "Skole" },
+        { "type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd" },
+        { "type": "text", "data": "sjur.jpg" }
       ]
     },
     {
       "faces": [
-        {"type": "header", "data": "Arbeid"},
-        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
-        {"type": "text", "data": "sjur.jpg"}        
+        { "type": "header", "data": "Arbeid" },
+        { "type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd" },
+        { "type": "text", "data": "sjur.jpg" }
       ]
     },
     {
       "faces": [
-        {"type": "header", "data": "Monoplant"},
-        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
-        {"type": "image", "data": "monoplant.png"}        
+        { "type": "header", "data": "Monoplant" },
+        { "type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd" },
+        { "type": "image", "data": "monoplant.png" }
       ]
     },
     {
       "faces": [
-        {"type": "header", "data": "Lydsykkelen"},
-        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
-        {"type": "image", "data": "teknosykkelen.jpg"}        
+        { "type": "header", "data": "Lydsykkelen" },
+        { "type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd" },
+        { "type": "image", "data": "teknosykkelen.jpg" }
       ]
     },
     {
       "faces": [
-        {"type": "header", "data": "Laser"},
-        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
-        {"type": "text", "data": "sjur.jpg"}        
+        { "type": "header", "data": "Laser" },
+        { "type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd" },
+        { "type": "text", "data": "sjur.jpg" }
       ]
     }
   ],
-  "data": {  "name": "Sjur Seibt",
+  "data": {
+    "name": "Sjur Seibt",
     "meta": { "born": "1987", "address": "Johan Selmers gate 8, 0475 Oslo", "mail": "sjurlur@gmail.com", "phone": "99229275" },
     "workExperience": [
       { "header": "Direktoratet for e-helse", "date": "2015 - ", "description": "Frontend utvikler og interaksjonsdesigner" },
@@ -85,5 +90,4 @@
       }
     ]
   }
-  
 }
