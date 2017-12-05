@@ -78,18 +78,18 @@ function getComponentForType(type) {
 }
 
 export default props => {
-    let planes = ['top', 'front', 'left', 'right', 'back', 'bottom'];
-    const sides = planes.map((plane, index) => {
+    let faces = ['top', 'front', 'left', 'right', 'back', 'bottom'];
+    const cubeFaces = faces.map((face, index) => {
         let Comp = undefined;
         if (props.faces && props.faces[index]) {
             Comp = getComponentForType(props.faces[index].type);
         }
-        return (<Side plane={plane}>{Comp ? <Comp data={props.faces[index].data}/> : null}</Side>)
-    })
+        return (<Side face={face}>{Comp ? <Comp data={props.faces[index].data}/> : null}</Side>)
+    });
     
     return (
         <Cube number={props.number}>
-        {sides}
+        {cubeFaces}
       </Cube>
     )
 }
