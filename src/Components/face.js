@@ -5,8 +5,9 @@ const Side = styled.div `
 position: absolute;
 width: 2em;
 height: 2em;
-background: ${props => getColor(props.face)};
-//border: 1px solid #2a1e5c;
+//background: ${props => getColor(props.face)};
+background-color: rgba(255,255,255,0.8);
+border: 1px solid #2a1e5c;
 color: #2a1e5c;
 transform: ${props => getTransform(props.face)};
 `;
