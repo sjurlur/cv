@@ -5,10 +5,14 @@ import Cube from './Components/cube';
 
 injectGlobal`
 * {font-family: 'Lato', sans-serif;}
+body {background: papayawhip}
 `;
 
 const LayoutContainer = styled.div`
-  margin: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  padding: 10rem;
 `;
 
 

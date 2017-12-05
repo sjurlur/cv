@@ -5,12 +5,27 @@ import HeaderComp from './headercube';
 import TextComp from './text';
 import ImageComp from './image';
 
-const Cube = styled.div `
-font-size: 5em;
-width: 2em;
-margin: 1.5em auto;
+const Cube = styled.button `
 transform-style: preserve-3d;
 transform: ${props => getTransform(props.number)};
+padding: 0;
+border: 0;
+text-align: initial;
+line-height: normal;
+overflow: visible;
+padding: 0;
+border-radius: 0;
+font: initial;
+font-size: 5em;
+display: block;
+cursor: pointer;
+text-rendering: initial;
+color: initial;
+letter-spacing: initial;
+word-spacing: initial;
+text-transform: initial;
+text-indent: initial;
+text-shadow: initial;
 `;
 
 function getRowNumber(num, maxRowWidth) {
@@ -88,7 +103,7 @@ export default props => {
     });
     
     return (
-        <Cube number={props.number}>
+      <Cube number={props.number}>
         {cubeFaces}
       </Cube>
     )
