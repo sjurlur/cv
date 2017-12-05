@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Side from './side';
+import HeaderComp from './headercube';
+import TextComp from './text';
+import ImageComp from './image';
 
 const Cube = styled.div `
 font-size: 5em;
@@ -61,15 +64,32 @@ function getTransform(number) {
 
 }
 
+function getComponentForType(type) {
+    switch(type) {
+        case 'header':
+            return HeaderComp;
+        case 'text':
+            return TextComp;
+        case 'image':
+            return ImageComp;
+        default:
+            break; 
+    }
+}
+
 export default props => {
+    let planes = ['top', 'front', 'left', 'right', 'back', 'bottom'];
+    const sides = planes.map((plane, index) => {
+        let Comp = undefined;
+        if (props.faces && props.faces[index]) {
+            Comp = getComponentForType(props.faces[index].type);
+        }
+        return (<Side plane={plane}>{Comp ? <Comp data={props.faces[index].data}/> : null}</Side>)
+    })
+    
     return (
         <Cube number={props.number}>
-        <Side plane="front">1</Side>
-        <Side plane="back">6</Side>
-        <Side plane="right">4</Side>
-        <Side plane="left">3</Side>
-        <Side plane="top">5</Side>
-        <Side plane="bottom">2</Side>
+        {sides}
       </Cube>
     )
 }

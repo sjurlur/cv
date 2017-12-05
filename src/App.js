@@ -14,22 +14,11 @@ const LayoutContainer = styled.div`
 
 class App extends Component {
   render() {
+    const cubes = cv.cubes.map((data, index) => <Cube faces={data.faces} number={index} />);
+    
     return (
       <LayoutContainer>
-        <Cube number={0}/>
-
-        <Cube number={1}/>
-        <Cube number={2}/> 
-        
-        <Cube number={3}/>  
-        <Cube number={4}/>  
-        <Cube number={5}/>
-
-        <Cube number={6}/> 
-        <Cube number={7}/>
-
-        <Cube number={8}/>   
-        
+        {cubes}
 
       </LayoutContainer>
     );

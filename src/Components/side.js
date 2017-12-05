@@ -5,11 +5,9 @@ const Side = styled.div `
 position: absolute;
 width: 2em;
 height: 2em;
-background: white;
-border: 1px solid rgba(0,0,0,.5);
+background: ${props => getColor(props.plane)};
+//border: 1px solid #2a1e5c;
 color: #2a1e5c;
-text-align: center;
-line-height: 2em;
 transform: ${props => getTransform(props.plane)};
 `;
 
@@ -18,7 +16,7 @@ function getTransform(plane) {
         case 'front':
             return 'translateZ(1em)';
         case 'top':
-            return 'rotateX( 90deg) translateZ(1em)';
+            return 'rotateX( 90deg) rotateZ(90deg) translateZ(1em)';
         case 'right':
             return 'rotateY( 90deg)  translateZ(1em)';
         case 'left':
@@ -34,18 +32,15 @@ function getTransform(plane) {
 
 function getColor(plane) {
     switch(plane) {
-        case 'front':
-            return '#2A1E5C';
-        case 'top':
-            return '#FEFF38';
-        case 'right':
-            return '#20BF55';
-        case 'left':
+        case 'front' || 'back':
             return '#FF6663';
-
+        case 'top' || 'bottom':
+            return '#FEFF38';
+        case 'left' || 'right':
+            return '#20BF55';
     }
 }
 
 export default props => {
-    return (<Side plane={props.plane}></Side>)
+    return (<Side plane={props.plane}>{props.children}</Side>)
 }

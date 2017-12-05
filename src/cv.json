@@ -1,43 +1,89 @@
 {
-  "name": "Sjur Seibt",
-  "meta": { "born": "1987", "address": "Johan Selmers gate 8, 0475 Oslo", "mail": "sjurlur@gmail.com", "phone": "99229275" },
-  "workExperience": [
-    { "header": "Direktoratet for e-helse", "date": "2015 - ", "description": "Frontend utvikler og interaksjonsdesigner" },
-    { "header": "Steria", "date": "2014 - 2015", "description": "Frontend utvikler" },
+  "cubes": [
     {
-      "header": "Universitetet i Oslo",
-      "date": "2013 - 2014",
-      "description":
-        "Daglig ansvar for studentlaboratoriet Åpen sone for eksperimentell informatikk. Veiledning av studenter i ulike former for prototyping og programmering av mikrokontrollere. Ansvarlig for formidling av informatikkfaget på arrangementer på Universitetet i Oslo og Teknisk museum. "
+      "faces": [
+        {"type": "header", "data": "Sjur Seibt"},
+        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
+        {"type": "image", "data": "sjur.jpg"}        
+      ]
     },
     {
-      "header": "Areca",
-      "date": "2013",
-      "description": "Design og koding av hjemmeside. Utvikling av Instagram-konkurranseapplikasjon."
+      "faces": [
+        {"type": "header", "data": "Skole"},
+        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
+        {"type": "text", "data": "sjur.jpg"}        
+      ]
     },
     {
-      "header": "Den Nationale Scene",
-      "date": "2008, 2010-2011",
-      "description": "Ansatt ved lysavdelingen"
+      "faces": [
+        {"type": "header", "data": "Arbeid"},
+        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
+        {"type": "text", "data": "sjur.jpg"}        
+      ]
     },
     {
-      "header": "Stavanger museum",
-      "date": "2005-2006",
-      "description": "Museumsvert på Stavanger Sjøfartsmuseum"
+      "faces": [
+        {"type": "header", "data": "Monoplant"},
+        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
+        {"type": "text", "data": "sjur.jpg"}        
+      ]
+    },
+    {
+      "faces": [
+        {"type": "header", "data": "Lydsykkelen"},
+        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
+        {"type": "text", "data": "sjur.jpg"}        
+      ]
+    },
+    {
+      "faces": [
+        {"type": "header", "data": "Laser"},
+        {"type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd"},
+        {"type": "text", "data": "sjur.jpg"}        
+      ]
     }
   ],
-  "education": [
-    { "header": "Universitetet i Oslo", "date": "2012-2014", "description": "Mastergrad i informatikk: design, bruk, interaksjon" },
-    { "header": "Universitet i Bergen", "date": "2009-2012", "description": "Bachelorgrad i nye medier" }
-  ],
-  "projects": [
-    { "header": "Teknosykkelen", "date": "2017", "description": "", "img": "teknosykkelen.jpg" },
-    {
-      "header": "Monoplant",
-      "date": "2014",
-      "img": "monoplant.png",
-      "description":
-        "Som masterprosjekt har jeg i samarbeid med Morten Kjelling, Jo Herstad og Intermedia (institutt for pedagogikk) utviklet ett læringssystem for fotosyntese til bruk i videregåaende skole. Systemet tar bilde av en plante hvert minutt og laster dette opp til ett API sammen med sensordata ang. faktorer som er viktig for fotosyntese (lysmengde, luftfuktighet, temperatur og jordfuktighet). Hvert døgn blir det automatisk satt sammen en timelapsevideo av alle bildene som ble tatt den dagen. Videoene blir spilt av i rask film slik at ett døgn vises på rundt 30 sekund. Sensordata vises i grafer. Planten er nå plassert i en biologiklasse (BI2) på Foss VGS, der de nå har om fotosyntese. Målet er å visualisere hvordan endringer i plantens fysiske miljø fører til endringer i fotosyntesen. Dermed håper vi å bidra til forståelsen av fotosyntese som jo er ett abstrakt fenomen."
-    }
-  ]
+  "data": {  "name": "Sjur Seibt",
+    "meta": { "born": "1987", "address": "Johan Selmers gate 8, 0475 Oslo", "mail": "sjurlur@gmail.com", "phone": "99229275" },
+    "workExperience": [
+      { "header": "Direktoratet for e-helse", "date": "2015 - ", "description": "Frontend utvikler og interaksjonsdesigner" },
+      { "header": "Steria", "date": "2014 - 2015", "description": "Frontend utvikler" },
+      {
+        "header": "Universitetet i Oslo",
+        "date": "2013 - 2014",
+        "description":
+          "Daglig ansvar for studentlaboratoriet Åpen sone for eksperimentell informatikk. Veiledning av studenter i ulike former for prototyping og programmering av mikrokontrollere. Ansvarlig for formidling av informatikkfaget på arrangementer på Universitetet i Oslo og Teknisk museum. "
+      },
+      {
+        "header": "Areca",
+        "date": "2013",
+        "description": "Design og koding av hjemmeside. Utvikling av Instagram-konkurranseapplikasjon."
+      },
+      {
+        "header": "Den Nationale Scene",
+        "date": "2008, 2010-2011",
+        "description": "Ansatt ved lysavdelingen"
+      },
+      {
+        "header": "Stavanger museum",
+        "date": "2005-2006",
+        "description": "Museumsvert på Stavanger Sjøfartsmuseum"
+      }
+    ],
+    "education": [
+      { "header": "Universitetet i Oslo", "date": "2012-2014", "description": "Mastergrad i informatikk: design, bruk, interaksjon" },
+      { "header": "Universitet i Bergen", "date": "2009-2012", "description": "Bachelorgrad i nye medier" }
+    ],
+    "projects": [
+      { "header": "Teknosykkelen", "date": "2017", "description": "", "img": "teknosykkelen.jpg" },
+      {
+        "header": "Monoplant",
+        "date": "2014",
+        "img": "monoplant.png",
+        "description":
+          "Som masterprosjekt har jeg i samarbeid med Morten Kjelling, Jo Herstad og Intermedia (institutt for pedagogikk) utviklet ett læringssystem for fotosyntese til bruk i videregåaende skole. Systemet tar bilde av en plante hvert minutt og laster dette opp til ett API sammen med sensordata ang. faktorer som er viktig for fotosyntese (lysmengde, luftfuktighet, temperatur og jordfuktighet). Hvert døgn blir det automatisk satt sammen en timelapsevideo av alle bildene som ble tatt den dagen. Videoene blir spilt av i rask film slik at ett døgn vises på rundt 30 sekund. Sensordata vises i grafer. Planten er nå plassert i en biologiklasse (BI2) på Foss VGS, der de nå har om fotosyntese. Målet er å visualisere hvordan endringer i plantens fysiske miljø fører til endringer i fotosyntesen. Dermed håper vi å bidra til forståelsen av fotosyntese som jo er ett abstrakt fenomen."
+      }
+    ]
+  }
+  
 }
