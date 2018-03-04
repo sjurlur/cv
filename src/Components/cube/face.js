@@ -6,22 +6,24 @@ const Side = styled.div`
   width: 2em;
   height: 2em;
   //background: ${props => getColor(props.face)};
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, ${props => (props.open ? 1 : 0.8)});
   border: 1px solid #2a1e5c;
   color: #2a1e5c;
-  transform: ${props => getTransform(props.face)};
+  transform: ${props => getTransform(props.face, props.open)};
+  opacity: ${props => getOpacity(props.face, props.open)};
+  transition: 0.5s;
 `;
 
-function getTransform(face) {
+function getTransform(face, open) {
   switch (face) {
     case 'front':
       return 'translateZ(1em)';
     case 'top':
-      return 'rotateX( 90deg) rotateZ(90deg) translateZ(1em)';
+      return open ? 'rotateX(0) rotateZ(0) translateZ(1em) translateY(-2em)' : 'rotateX( 90deg) rotateZ(90deg) translateZ(1em)';
     case 'right':
-      return 'rotateY( 90deg)  translateZ(1em)';
+      return open ? 'rotateY(0) translateX(2em) translateZ(1em)' : 'rotateY( 90deg) translateZ(1em)';
     case 'left':
-      return 'rotateY(-90deg)  translateZ(1em)';
+      return open ? 'rotateY(0) translateX(-2em) translateZ(1em)' : 'rotateY(-90deg)  translateZ(1em)';
     case 'bottom':
       return 'rotateX(-90deg)  translateZ(1em)';
     case 'back':
@@ -29,6 +31,20 @@ function getTransform(face) {
     default:
       break;
   }
+}
+
+function getOpacity(face, open) {
+  if (open) {
+    switch (face) {
+      case 'bottom':
+        return '0';
+      case 'back':
+        return '0';
+      default:
+        return '1';
+    }
+  }
+  return '1';
 }
 
 function getColor(face) {
@@ -45,5 +61,9 @@ function getColor(face) {
 }
 
 export default props => {
-  return <Side face={props.face}>{props.children}</Side>;
+  return (
+    <Side face={props.face} open={props.open}>
+      {props.children}
+    </Side>
+  );
 };

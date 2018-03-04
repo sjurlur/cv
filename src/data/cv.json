@@ -1,6 +1,7 @@
 {
   "cubes": [
     {
+      "id": "meta",
       "faces": [
         { "type": "header", "data": "Sjur Seibt" },
         {
@@ -12,6 +13,7 @@
       ]
     },
     {
+      "id": "utdanning",
       "faces": [
         { "type": "header", "data": "Utdanning" },
         {
@@ -23,6 +25,7 @@
       ]
     },
     {
+      "id": "arbeid",
       "faces": [
         { "type": "header", "data": "Arbeid" },
         {
@@ -34,6 +37,7 @@
       ]
     },
     {
+      "id": "monoplant",
       "faces": [
         { "type": "header", "data": "Monoplant" },
         {
@@ -45,6 +49,7 @@
       ]
     },
     {
+      "id": "tekno",
       "faces": [
         { "type": "header", "data": "Lydsykkelen" },
         {
@@ -56,6 +61,7 @@
       ]
     },
     {
+      "id": "laser",
       "faces": [
         { "type": "header", "data": "Laser" },
         {

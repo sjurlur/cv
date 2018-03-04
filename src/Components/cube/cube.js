@@ -6,18 +6,20 @@ import TextComp from './facetypes/text';
 import ImageComp from './facetypes/image';
 const Button = styled.div`
   font-size: 5em;
-  cursor: pointer;
+  cursor: ${props => (props.open ? 'normal' : 'pointer')};
+  position: relative;
+  z-index: ${props => (props.open ? 1 : 0)};
 
   &:focus {
     outline: none;
   }
 
   &:hover {
-    animation: push 0.3s;
+    animation: ${props => (props.open ? 'none' : 'push 0.3s')};
     transform-style: preserve-3d;
 
     div div:first-child {
-      background-color: #cae2bf;
+      background-color: ${props => (props.open ? '#fff' : '#cae2bf')};
     }
   }
 
@@ -33,9 +35,10 @@ const Button = styled.div`
 
 const Cube = styled.div`
   transform-style: preserve-3d;
-  transform: ${props => getTransform(props.number, -45, 45)};
+  transform: ${props => getTransform(props.number, props.open)};
   margin: 1.5em auto;
   width: 2em;
+  transition: 1s;
   }
 `;
 
@@ -53,7 +56,21 @@ function getRowNumber(num, maxRowWidth) {
   return rowNumber - 1;
 }
 
-function getTransform(number, rotateX, rotateY) {
+function getTransform(number, open) {
+  console.log(number);
+  console.log(open);
+  if (open) {
+    return getOpen(number);
+  } else {
+    return getClosed(number, -45, 45);
+  }
+}
+
+function getOpen() {
+  return `rotateX(0) rotateY(0) translateY(2em) scale(1.5)`;
+}
+
+function getClosed(number, rotateX, rotateY) {
   const baseRotation = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   const offset = 2;
   if (number === 0) {
@@ -97,12 +114,22 @@ export default props => {
     if (props.faces && props.faces[index]) {
       Comp = getComponentForType(props.faces[index].type);
     }
-    return <Face face={face}>{Comp ? <Comp data={props.faces[index].data} /> : null}</Face>;
+    return (
+      <Face face={face} open={props.open}>
+        {Comp ? <Comp data={props.faces[index].data} /> : null}
+      </Face>
+    );
   });
 
   return (
-    <Button>
-      <Cube number={props.number} onClick={() => {}}>
+    <Button open={props.open}>
+      <Cube
+        open={props.open}
+        number={props.number}
+        onClick={() => {
+          props.openCube(props.id);
+        }}
+      >
         {cubeFaces}
       </Cube>
     </Button>
