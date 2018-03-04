@@ -9,7 +9,24 @@ body {background: #B7D8A8}
 ul {padding-left: 1.7em;}
 `;
 
-const LayoutContainer = styled.div``;
+const LayoutContainer = styled.div`
+  transform: scale(0.5);
+  @media (min-width: 400px) {
+    transform: scale(0.6);
+  }
+  @media (min-width: 500px) {
+    transform: scale(0.7);
+  }
+  @media (min-width: 600px) {
+    transform: scale(0.8);
+  }
+  @media (min-width: 700px) {
+    transform: scale(0.9);
+  }
+  @media (min-width: 800px) {
+    transform: scale(1);
+  }
+`;
 
 const Overlay = styled.div`
   width: 100%;
