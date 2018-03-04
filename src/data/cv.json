@@ -6,43 +6,63 @@
         {
           "type": "text",
           "data":
-            "<dl><dt>Født</dt><dd>1987</dd><dt>Adresse</dt><dd>Johan selmers gate 8</dd><dt>Epost</dt><dd><a href='mailto:sjurlur@gmail.com'>sjurlur@gmail.com</a></dd><dt>Telefon</dt><dd><a href='tel:004799229275'>99229275</a></dd></dl>"
+            "<dl><dt>Født</dt><dd>1987</dd><dt>Epost</dt><dd><a href='mailto:sjurlur@gmail.com'>sjurlur@gmail.com</a></dd><dt>Telefon</dt><dd><a href='tel:004799229275'>99229275</a></dd></dl>"
         },
         { "type": "image", "data": "sjur.jpg" }
       ]
     },
     {
       "faces": [
-        { "type": "header", "data": "Skole" },
-        { "type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd" },
-        { "type": "text", "data": "sjur.jpg" }
+        { "type": "header", "data": "Utdanning" },
+        {
+          "type": "text",
+          "data":
+            "<h3>Universitetet i Oslo</h3><div>2013-2014<p>Mastergrad i informatikk: design, bruk, interaksjon</p><h3>Universitetet i Bergen</h3><div>2009-2012</div><p>Bachelorgrad i nye medier</p>"
+        },
+        { "type": "text", "data": "" }
       ]
     },
     {
       "faces": [
         { "type": "header", "data": "Arbeid" },
-        { "type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd" },
+        {
+          "type": "text",
+          "data":
+            "<h3>Direktoratet for e-helse</h3><div>2015-</div><p>Frontend-utvikler</p><h3>Sopra Steria</h3><div>2014-2015<p>Frontend-utvikler</p></div><h3>Universitetet i Oslo</h3><div>2013-2014<p>Vitenskapelig assistent ved makerspacet Åpen sone for eksperimentell informatikk</p></div>"
+        },
         { "type": "text", "data": "sjur.jpg" }
       ]
     },
     {
       "faces": [
         { "type": "header", "data": "Monoplant" },
-        { "type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd" },
+        {
+          "type": "text",
+          "data":
+            "Som masterprosjekt har jeg i samarbeid med Morten Kjelling, Jo Herstad og Intermedia (institutt for pedagogikk) utviklet ett læringssystem for fotosyntese til bruk i videregåaende skole. Systemet tar bilde av en plante hvert minutt og laster dette opp til ett API sammen med sensordata ang. faktorer som er viktig for fotosyntese (lysmengde, luftfuktighet, temperatur og jordfuktighet). Hvert døgn blir det automatisk satt sammen en timelapsevideo av alle bildene som ble tatt den dagen. Videoene blir spilt av i rask film slik at ett døgn vises på rundt 30 sekund. Sensordata vises i grafer. Planten er nå plassert i en biologiklasse (BI2) på Foss VGS, der de nå har om fotosyntese. Målet er å visualisere hvordan endringer i plantens fysiske miljø fører til endringer i fotosyntesen. Dermed håper vi å bidra til forståelsen av fotosyntese som jo er ett abstrakt fenomen."
+        },
         { "type": "image", "data": "monoplant.png" }
       ]
     },
     {
       "faces": [
         { "type": "header", "data": "Lydsykkelen" },
-        { "type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd" },
+        {
+          "type": "text",
+          "data":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet rhoncus libero, vitae aliquet velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus vitae turpis in eros porta eleifend. Vivamus dictum justo vitae accumsan tincidunt. Quisque in augue at magna sollicitudin semper sagittis porttitor erat. Etiam feugiat ornare interdum. Curabitur ex diam, lacinia quis gravida eu, auctor at tellus. Morbi tincidunt, dolor nec dignissim varius, mauris augue pretium nibh, eu rutrum felis neque vitae neque. Donec et rutrum tortor, at viverra ex."
+        },
         { "type": "image", "data": "teknosykkelen.jpg" }
       ]
     },
     {
       "faces": [
         { "type": "header", "data": "Laser" },
-        { "type": "text", "data": "blabsldbla absldbasbld blabsdblabsld balsdblasd" },
+        {
+          "type": "text",
+          "data":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet rhoncus libero, vitae aliquet velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus vitae turpis in eros porta eleifend. Vivamus dictum justo vitae accumsan tincidunt. Quisque in augue at magna sollicitudin semper sagittis porttitor erat. Etiam feugiat ornare interdum. Curabitur ex diam, lacinia quis gravida eu, auctor at tellus. Morbi tincidunt, dolor nec dignissim varius, mauris augue pretium nibh, eu rutrum felis neque vitae neque. Donec et rutrum tortor, at viverra ex."
+        },
         { "type": "text", "data": "sjur.jpg" }
       ]
     }

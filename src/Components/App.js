@@ -5,7 +5,7 @@ import Cube from './cube/cube';
 
 injectGlobal`
 * {font-family: 'Lato', sans-serif;}
-body {background: papayawhip}
+body {background: #B7D8A8}
 `;
 
 const LayoutContainer = styled.div``;

@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Side = styled.div`
-position: absolute;
-width: 2em;
-height: 2em;
-//background: ${props => getColor(props.face)};
-background-color: rgba(255,255,255,0.8);
-border: 1px solid #2a1e5c;
-color: #2a1e5c;
-transform: ${props => getTransform(props.face)};
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  //background: ${props => getColor(props.face)};
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #2a1e5c;
+  color: #2a1e5c;
+  transform: ${props => getTransform(props.face)};
 `;
 
 function getTransform(face) {
@@ -39,6 +39,8 @@ function getColor(face) {
       return '#FEFF38';
     case 'left' || 'right':
       return '#20BF55';
+    default:
+      break;
   }
 }
 

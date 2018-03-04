@@ -17,7 +17,7 @@ const Button = styled.div`
     transform-style: preserve-3d;
 
     div div:first-child {
-      background-color: papayawhip;
+      background-color: #cae2bf;
     }
   }
 
@@ -26,7 +26,7 @@ const Button = styled.div`
       transform: translateY(0);
     }
     50% {
-      transform: translateY(0.5em);
+      transform: translateY(0.2em);
     }
   }
 `;
@@ -91,7 +91,7 @@ function getComponentForType(type) {
 }
 
 export default props => {
-  let faces = ['top', 'front', 'left', 'right', 'back', 'bottom'];
+  let faces = ['top', 'left', 'front', 'right', 'back', 'bottom'];
   const cubeFaces = faces.map((face, index) => {
     let Comp = undefined;
     if (props.faces && props.faces[index]) {
