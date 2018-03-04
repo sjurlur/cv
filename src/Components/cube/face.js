@@ -14,6 +14,25 @@ const Side = styled.div`
   transition: 0.5s;
 `;
 
+const CloseButton = styled.button`
+  border-radius: 100em;
+  border: 1px solid #2a1e5c;
+  padding: 5px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: 2em;
+  width: 2em;
+  font-size: 0.15em;
+  line-height: 1em;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #2a1e5c;
+  }
+`;
+
 function getTransform(face, open) {
   switch (face) {
     case 'front':
@@ -61,8 +80,10 @@ function getColor(face) {
 }
 
 export default props => {
+  const closeButton = props.open && props.face === 'top' ? <CloseButton aria-label="lukk">X</CloseButton> : null;
   return (
     <Side face={props.face} open={props.open}>
+      {closeButton}
       {props.children}
     </Side>
   );

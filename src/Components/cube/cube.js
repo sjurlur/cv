@@ -17,10 +17,6 @@ const Button = styled.div`
   &:hover {
     animation: ${props => (props.open ? 'none' : 'push 0.3s')};
     transform-style: preserve-3d;
-
-    div div:first-child {
-      background-color: ${props => (props.open ? '#fff' : '#cae2bf')};
-    }
   }
 
   @keyframes push {
@@ -39,7 +35,6 @@ const Cube = styled.div`
   margin: 1.5em auto;
   width: 2em;
   transition: 1s;
-  }
 `;
 
 function getRowNumber(num, maxRowWidth) {

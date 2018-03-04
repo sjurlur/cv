@@ -4,12 +4,16 @@
       "id": "meta",
       "faces": [
         { "type": "header", "data": "Sjur Seibt" },
+        { "type": "image", "data": "sjur.jpg" },
         {
           "type": "text",
           "data":
             "<dl><dt>Født</dt><dd>1987</dd><dt>Epost</dt><dd><a href='mailto:sjurlur@gmail.com'>sjurlur@gmail.com</a></dd><dt>Telefon</dt><dd><a href='tel:004799229275'>99229275</a></dd></dl>"
         },
-        { "type": "image", "data": "sjur.jpg" }
+        {
+          "type": "text",
+          "data": "hei"
+        }
       ]
     },
     {

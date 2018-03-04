@@ -10,6 +10,15 @@ body {background: #B7D8A8}
 
 const LayoutContainer = styled.div``;
 
+const Overlay = styled.div`
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.55);
+  top: 0;
+  left: 0;
+`;
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,6 +26,14 @@ class App extends Component {
       openCube: undefined,
     };
   }
+
+  componentDidMount = () => {
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' || event.keyCode === 27) {
+        this.setState({ openCube: undefined });
+      }
+    });
+  };
 
   openCube = id => {
     if (this.state.openCube === id) {
@@ -27,11 +44,23 @@ class App extends Component {
   };
 
   render() {
+    const overlay = this.state.openCube ? (
+      <Overlay
+        onClick={() => {
+          this.openCube(undefined);
+        }}
+      />
+    ) : null;
     const cubes = cv.cubes.map((data, index) => (
       <Cube id={data.id} faces={data.faces} openCube={this.openCube} number={index} open={this.state.openCube === data.id} />
     ));
 
-    return <LayoutContainer>{cubes}</LayoutContainer>;
+    return (
+      <LayoutContainer>
+        {cubes}
+        {overlay}
+      </LayoutContainer>
+    );
   }
 }
 
