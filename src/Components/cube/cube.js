@@ -111,7 +111,7 @@ export default props => {
     }
     return (
       <Face face={face} open={props.open}>
-        {Comp ? <Comp data={props.faces[index].data} /> : null}
+        {Comp ? <Comp open={props.open} data={props.faces[index].data} /> : null}
       </Face>
     );
   });

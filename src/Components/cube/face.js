@@ -25,6 +25,7 @@ const CloseButton = styled.button`
   width: 2em;
   font-size: 0.15em;
   line-height: 1em;
+  cursor: pointer;
 
   &:hover,
   &:focus {

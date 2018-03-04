@@ -6,6 +6,7 @@ import Cube from './cube/cube';
 injectGlobal`
 * {font-family: 'Lato', sans-serif;}
 body {background: #B7D8A8}
+ul {padding-left: 1.7em;}
 `;
 
 const LayoutContainer = styled.div``;
@@ -14,9 +15,10 @@ const Overlay = styled.div`
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
+  cursor: pointer;
 `;
 
 class App extends Component {
@@ -57,8 +59,8 @@ class App extends Component {
 
     return (
       <LayoutContainer>
-        {cubes}
         {overlay}
+        {cubes}
       </LayoutContainer>
     );
   }
