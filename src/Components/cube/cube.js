@@ -6,7 +6,7 @@ import TextComp from './facetypes/text';
 import ImageComp from './facetypes/image';
 const Button = styled.div`
   font-size: 5em;
-  cursor: ${props => (props.open ? 'normal' : 'pointer')};
+  cursor: ${props => (props.open ? 'inherit' : 'pointer')};
   position: relative;
   z-index: ${props => (props.open ? 1 : 0)};
 

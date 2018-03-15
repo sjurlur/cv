@@ -9,7 +9,7 @@ body {background: #B7D8A8}
 ul {padding-left: 1.7em;}
 `;
 
-const LayoutContainer = styled.div`
+const CubeWrapper = styled.div`
   transform: scale(0.5);
   @media (min-width: 400px) {
     transform: scale(0.6);
@@ -26,6 +26,9 @@ const LayoutContainer = styled.div`
   @media (min-width: 800px) {
     transform: scale(1);
   }
+  @media (min-width: 1600px) {
+    transform: scale(1.2);
+  }
 `;
 
 const Overlay = styled.div`
@@ -36,6 +39,16 @@ const Overlay = styled.div`
   top: 0;
   left: 0;
   cursor: pointer;
+`;
+
+const Github = styled.a`
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+`;
+
+const GithubLogo = styled.img`
+  width: 30px;
 `;
 
 class App extends Component {
@@ -75,10 +88,13 @@ class App extends Component {
     ));
 
     return (
-      <LayoutContainer>
+      <div>
         {overlay}
-        {cubes}
-      </LayoutContainer>
+        <CubeWrapper>{cubes}</CubeWrapper>
+        <Github href="https://github.com/sjurlur/cv" target="_new" aria-label="Se denne siden på github">
+          <GithubLogo src="/github.svg" />
+        </Github>
+      </div>
     );
   }
 }
