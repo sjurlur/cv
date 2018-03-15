@@ -42,7 +42,7 @@ const Overlay = styled.div`
 `;
 
 const Github = styled.a`
-  position: absolute;
+  position: fixed;
   right: 10px;
   bottom: 10px;
 `;
