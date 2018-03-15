@@ -52,8 +52,6 @@ function getRowNumber(num, maxRowWidth) {
 }
 
 function getTransform(number, open) {
-  console.log(number);
-  console.log(open);
   if (open) {
     return getOpen(number);
   } else {
