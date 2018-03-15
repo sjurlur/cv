@@ -92,7 +92,7 @@ class App extends Component {
         {overlay}
         <CubeWrapper>{cubes}</CubeWrapper>
         <Github href="https://github.com/sjurlur/cv" target="_new" aria-label="Se denne siden på github">
-          <GithubLogo src="github.svg" />
+          <GithubLogo alt="github logo" src="github.svg" />
         </Github>
       </div>
     );
