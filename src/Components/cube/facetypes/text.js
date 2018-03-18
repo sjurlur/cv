@@ -6,6 +6,12 @@ const Wrapper = styled.div`
   padding: 0;
   height: 100%;
   overflow: hidden;
+  dt {
+    font-weight: 600;
+  }
+  a {
+    word-break: break-all;
+  }
 `;
 
 const Data = styled.div`

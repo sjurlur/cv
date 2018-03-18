@@ -8,7 +8,7 @@
         {
           "type": "text",
           "data":
-            "<dl><dt>Født</dt><dd>1987</dd><dt>Epost</dt><dd><a href='mailto:sjurlur@gmail.com'>sjurlur@gmail.com</a></dd><dt>Telefon</dt><dd><a href='tel:004799229275'>99229275</a></dd></dl>"
+            "<dl><dt>Født</dt><dd>1987</dd><dt>Epost</dt><dd><a href='mailto:sjurlur@gmail.com'>sjurlur@gmail.com</a></dd><dt>Telefon</dt><dd><a href='tel:004799229275'>99229275</a></dd><dt>Linkedin</dt><dd><a href='https://www.linkedin.com/in/sjurseibt/'>https://www.linkedin.com/in/sjurseibt/</a></dd></dl>"
         }
       ]
     },
@@ -55,7 +55,7 @@
         {
           "type": "text",
           "data":
-            "<p>Monoplant er en brobygger i menneske-plante-interaksjon. Ved hjelp av sensorer og kamera visualiseres fotosyntesen slik at den blir observere for mennesker.</p><p>Prosjektet ble utført på InterMedia - Senter for tverrfaglige studier i nye medier og kommunikasjonsteknologi ved Universitetet i Oslo</p>"
+            "<p>Monoplant er en brobygger i menneske-plante-interaksjon. Ved hjelp av sensorer og kamera visualiseres fotosyntesen slik at den blir lettere å observere for mennesker.</p><p>Prosjektet ble utført på InterMedia - Senter for tverrfaglige studier i nye medier og kommunikasjonsteknologi ved Universitetet i Oslo</p>"
         },
         { "type": "image", "data": "monoplant2.jpg" },
         {
@@ -88,7 +88,10 @@
           "data":
             "<h3>Frontend</h3><ul><li>CSS/SASS</li><li>HTML</li><li>Javascript</li><li>React</li><li>jQuery</li><li>Angular</li><li>Redux</li><li>Webpack</li><li>GIT</li><li>Universell utforming</li><li>Responsivt design</li></ul></p>"
         },
-        { "type": "text", "data": "<h3>Annet</h3><ul><li>3d-printing</li><li>Laserkutting</li><li>CNC-fresing</li><li>Lodding</li></ul>" }
+        {
+          "type": "text",
+          "data": "<h3>Annet</h3><ul><li>3d-printing</li><li>Laserkutting</li><li>CNC-fresing</li><li>Lodding</li><li>Fusion 360</li></ul>"
+        }
       ]
     }
   ],
